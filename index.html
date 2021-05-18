@@ -3,33 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+ <img src="images/bg-pattern-top.svg" alt="Top pattern" class="pattern pattern--top">
 
-  803K
-  Likes
+  <main>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="card">
+      <div class="card__header">
+        <img class="card__pattern" src="images/bg-pattern-card.svg" alt="Card pattern">
+        <img class="card__image" src="images/image-victor.jpg" alt="Victor">
+      </div>
+
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__person-info"><span class="card__name">Victor Crest</span> <span class="card__age">26</span></div>
+          <div class="card__city">London</div>
+        </div>
+      </div>
+
+      <div class="card__footer">
+        <div class="stat stat-one">
+          <div class="stat__number">80K</div>
+          <div class="stat__name">Followers</div>
+  
+        </div>
+
+        <div class="stat stat-one">
+          <div class="stat__number">803K</div>
+          <div class="stat__name">Likes</div>
+        </div>
+
+        <div class="stat stat-one">
+          <div class="stat__number">1.4K</div>
+          <div class="stat__name">Photos</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <img src="images/bg-pattern-bottom.svg" alt="Bottom pattern" class="pattern pattern--bottom">
+
 </body>
 </html>
